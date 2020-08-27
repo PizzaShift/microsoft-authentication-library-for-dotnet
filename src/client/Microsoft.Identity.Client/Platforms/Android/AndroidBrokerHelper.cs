@@ -26,6 +26,7 @@ using System.Threading.Tasks;
 
 namespace Microsoft.Identity.Client.Platforms.Android
 {
+#pragma warning disable CA1305
     [global::Android.Runtime.Preserve(AllMembers = true)]
     internal class AndroidBrokerHelper
     {
@@ -521,4 +522,5 @@ namespace Microsoft.Identity.Client.Platforms.Android
             return string.Empty;
         }
     }
+#pragma warning restore CA1305
 }
