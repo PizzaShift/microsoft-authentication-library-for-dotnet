@@ -16,7 +16,7 @@ using Microsoft.Identity.Json.Linq;
 
 namespace Microsoft.Identity.Client.Platforms.Android
 {
-#pragma warning disable CA1305
+#pragma warning disable CS0618
     [AndroidNative.Runtime.Preserve(AllMembers = true)]
     internal class AndroidBroker : IBroker
     {
@@ -203,5 +203,5 @@ namespace Microsoft.Identity.Client.Platforms.Android
             return MsalTokenResponse.CreateFromBrokerResponse(response);
         }
     }
-#pragma warning restore CA1305
+#pragma warning restore CS0618
 }
